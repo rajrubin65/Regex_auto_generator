@@ -33,5 +33,5 @@ def regex_executor(request:Request,input_text: str = Form(...)):
         return templates.TemplateResponse("item.html",{'request':request,'output':''})
 
 
-# if __name__ == "__main__":
-#     uvicorn.run("main:app", host="0.0.0.0", port=8888,reload= True)
+if __name__ == "__main__":
+    uvicorn.run("main:app", host="0.0.0.0", port=8888,reload= True)
